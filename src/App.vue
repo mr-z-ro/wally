@@ -3,8 +3,8 @@
     <app-header/>
     <section class="container">
       <app-grid/>
-      <app-form/>
     </section>
+    <app-form/>
   </div>
 </template>
 
@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss">
 #app {
-  margin: 5vmin 5vmin 0;
+  margin: 1vmin 1vmin 0;
 }
 
 .container {

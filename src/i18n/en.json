@@ -1,13 +1,13 @@
 {
   "header": {
-    "builtby": "built with 🌮 by"
+    "builtby": "built with ☕ by"
   },
   "form": {
     "columns": "Columns",
     "rows": "Rows",
     "columngap": "Column Gap",
     "rowgap": "Row Gap",
-    "codebutton": "Please may I have some code",
+    "codebutton": "Save",
     "project": "What does this project do?",
     "reset": "Reset grid",
     "units": "(in px)"

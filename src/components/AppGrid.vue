@@ -1,34 +1,5 @@
 <template>
   <main>
-    <section
-      :style="{ gridTemplateColumns: colTemplate, gridTemplateRows: '50px', gridColumnGap: columngap + 'px', gridRowGap: rowgap + 'px' }"
-      class="colunits"
-    >
-      <div v-for="(col, i) in colArr" :key="i">
-        <input
-          v-model.lazy="col.unit"
-          @change="validateunit($event, i, 'col')"
-          :class="[columns > 8 ? widthfull : '']"
-          aria-label="Grid Template Column Measurements"
-        >
-        <div class="errors" v-if="errors.col.indexOf(i) !== -1">{{ $t("grid.realcssunit") }}</div>
-      </div>
-    </section>
-
-    <section
-      :style="{ gridTemplateColumns: '50px', gridTemplateRows: rowTemplate, gridColumnGap: columngap + 'px', gridRowGap: rowgap + 'px' }"
-      class="rowunits"
-    >
-      <div v-for="(row, i) in rowArr" :key="i">
-        <input
-          v-model.lazy="row.unit"
-          @change="validateunit($event, i, 'row')"
-          aria-label="Grid Template Row Measurements"
-        >
-        <div class="errors" v-if="errors.row.indexOf(i) !== -1">{{ $t("grid.realcssunit") }}</div>
-      </div>
-    </section>
-
     <div id="gridcontainer">
       <section
         class="grid"
@@ -161,9 +132,9 @@ export default {
 
 <style lang="scss" scoped>
 main {
-  width: calc(70vw - 50px);
-  height: calc(70vh - 50px);
-  margin: 15px 0 0 75px;
+  width: calc(100vw);
+  height: calc(100vh - 100px);
+  margin: 0;
 }
 
 @mixin colors($max, $color-frequency) {
